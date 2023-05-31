@@ -7,22 +7,19 @@
     <title>Desafio da Lâmpada</title>
     <link rel="stylesheet" href="estilo/style.css">
 </head>
+
 <body>
     <header>
-        <img src="imagens/logo.svg" alt="ERRO">
-        <h1>Interaja com a Lâmpada</h1>
+        <img src="imagens/logo.svg" alt="ERRO" width="120px">
+        <h1>Interaja com a Lâmpada DNC</h1>
     </header>
+
     <section>
-        <div id="container">
-            <img id="lampada1" src="imagens/lampada01.svg" alt="">
-
-            <input type="button" value="Ligar" class="botao" onclick="ligar()"></input> <br>
-
-            <input type="button" value="Desligar" class="botao" onclick="apagar()"></input> 
-
-           
-           
-        </div>
+        <p><strong>[FRÁGIL]</strong> <br> Cuidado com a lâmpada!</p>
+        <img src="imagens/desligada.svg" id="lampada" onclick="Quebrar()"> <br>
+        <input type="button" value="Ligar" class="botao" id="liga" onclick="Ligar()">
+        <input type="button" value="Desligar" class="botao" id="desliga" onclick="Desligar()">
+        <input type="button" value="Trocar" class="botao" id="desliga" onclick="Trocar()">
     </section>
     <script src="funcionalidades.js"></script>
 </body>
